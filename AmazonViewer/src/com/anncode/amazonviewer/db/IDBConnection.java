@@ -9,6 +9,7 @@ public interface IDBConnection {
 		Connection connection = null;
 
 		try {
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			connection = DriverManager.getConnection(URL + DB, USER, PASSWORD);
 
