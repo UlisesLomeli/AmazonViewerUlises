@@ -1,14 +1,16 @@
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Hola Ulises");
+        UberX uberX = new UberX("AMQ123", new Account("Andres Herrera", "AND123"), "Chevrolet", "Sonic");
+        uberX.setPassenger(4);
+        uberX.printDataCar();
 
-public class Main {
+        UberVan uberVan = new UberVan("FGH345", new Account("Ulises Lomeli", "AND123"));
+        uberVan.setPassenger(6);
+        uberVan.printDataCar();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("HOLA MUNDO");
-		
-		Car car = new Car("SDF123", new Account("Ulises Lomeli","LOUU97"));
-		car.passenger=4;
-		car.printDataCar();
-		
-	}
-
+        /*Car car2 = new Car("QWE567", new Account("Andrea Herrera", "ANDA876"));
+        car2.passegenger = 3;
+        car2.printDataCar();*/
+    }
 }
